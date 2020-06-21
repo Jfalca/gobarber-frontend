@@ -62,7 +62,7 @@ function Notifications() {
         <Scroll>
           {notifications.map(notification => (
             <Notification key={notification._id} unread={!notification.read}>
-              <p>Você possui um novo agendaento.</p>
+              <p>Você possui um novo agendamento.</p>
               <time>{notification.timeDistance}</time>
               {!notification.read && [
                 <button
